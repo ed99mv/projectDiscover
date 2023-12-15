@@ -1,4 +1,3 @@
-// UserMenu.jsx
 import React, { useContext, useRef, useState } from "react";
 import { useDetectOutsideClick } from "./useDetectOutsideClick";
 import { AuthContext } from "../../authContext";
@@ -7,7 +6,7 @@ import LogOut from "../logout/LogOut";
 import NewTourForm from "../form_tour/NewTourForm";
 import NewCompanyForm from "../form_company/NewCompanyForm";
 import RoleChange from "../RoleChange/RoleChange";
-import "./UserMenu.css";
+import './UserMenu.css'
 
 function UserMenu() {
   const { isLoggedIn, userRole, userName } = useContext(AuthContext);
@@ -36,7 +35,7 @@ function UserMenu() {
   };
 
   const toggleMenu = () => {
-    setIsActive(!isLoggedIn);
+    setIsActive(!isActive);
   };
 
   return (
